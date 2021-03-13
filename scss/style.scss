@@ -2,6 +2,7 @@ $color: #ffffff;
 $titleColor: #262D33;
 $textColor: #4B5157;
 $subtextColor: #939699;
+$backColor: #30363D;
 $border: 1px solid #D9DADB;
 $paddingTop: 30px;
 $paddingBottom: 30px;
@@ -12,6 +13,7 @@ $tilteFontFamily: 'Roboto Slab', serif;
 $mainFontFamily: 'Lato', sans-serif;
 $mainFontWeight: 400;
 $fontWeight: bold;
+$borderRadius: 10px;
 
 
 *{
@@ -135,7 +137,7 @@ p{
 
 .nav{
     background-color: $titleColor;
-    height: 55px;
+    padding-bottom: $paddingBottom;
 }
 
 .nav__list{
@@ -143,7 +145,7 @@ p{
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    padding-top: 17px;
+    height: 55px;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -156,43 +158,77 @@ p{
     }
 }
 
+
 .news{
     display: flex;
-    height: 130px;
     background-color: $titleColor;
+    margin: -2px;
+    height: 475px;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    background-color: $backColor;
+    border-radius: $borderRadius;
+    height: 130px;
 }
 
 .news__topic{
     display: flex;
     align-items: center;
+    height: 75px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-right: $border;
 }
+
+.news__topic:last-child{
+    border: none;
+}
+
 
 .news__topic__title{
     color: $color;
     font-size: 16px;
     font-family: $tilteFontFamily;
     font-weight: $fontWeight;
-    margin-right: 15px;
-    padding-left: 25px;
+    line-height: 25px;
+} 
+
+.top{
+    margin: -285px;
 }
 
-/* .news__topic__title:first-child{
-    padding-left: 0;
+.top__container{
+    display: flex;
 }
 
-.news__topic__title:last-child{
-    margin-right: 0;
-
-} */
-
-.news__topic__img{
-    border-right: 1px solid $textColor;
-    padding-right: 25px;
+.back{
+    background-image: url(../img/mountain.png);
+    width: 877px;
+    height: 570px;
+    border-radius: 10px 0 0 10px;
 }
 
-/* .news__topic__img:last-child{
-    border: none;
-} */
+.topics{
+    border-radius: 0 10px 10px 0;
+}
 
+.topics__title{
+    height: 59px;
+    background-color: $color;
+    border-radius: 0 10px 0 0;
+}
 
+.column{
+    background-color: $color;
+    height: 99px;
+    border-top: $border;
+    border-bottom: $border;
+}
 
+.column:last-child{
+    height: 115px;
+    border-radius: 0 0 10px 0;
+}
