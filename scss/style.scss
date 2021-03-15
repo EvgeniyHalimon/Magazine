@@ -219,6 +219,9 @@ p{
     height: 59px;
     background-color: $color;
     border-radius: 0 10px 0 0;
+    font-size: 16px;
+    font-weight: $fontWeight;
+    font-family: $mainFontFamily;
 }
 
 .column{
@@ -231,4 +234,17 @@ p{
 .column:last-child{
     height: 115px;
     border-radius: 0 0 10px 0;
+}
+
+.column__title{
+    font-family: $mainFontFamily;
+    font-size: 12px;
+    color: #3bbdc4;
+
+    p{
+        font-family: $mainFontFamily;
+        font-size: $mainFontSize;
+        font-weight: $mainFontWeight;
+        color: $textColor;
+    }
 }
