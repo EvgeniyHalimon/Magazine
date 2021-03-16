@@ -41,13 +41,19 @@ p{
     
 }
 
-.head{
+.header__head{
     display: flex;
     justify-content: space-between;
     align-items: center;  
     background-color: $color;
     border-bottom: $border;
     height: 50px;
+}
+
+.header__sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .head__icon{
@@ -63,18 +69,25 @@ p{
     font-weight: $fontWeight;
 }
 
-.sub{
-    height: 0;
+.header__search{
+
 }
 
 .head__search{
-    
+    margin-right: 5px;
 }
+
 .head__input{
     border: none;
-    margin-right: 500px;
+    width: 600px;
     color: $subtextColor;
 }
+
+.header__subscribe{
+    display: flex;
+    align-items: center;
+}
+
 .head__img{
     margin-top: 9px;
     border-top: 3px solid grey;
@@ -90,8 +103,18 @@ p{
 
 }
 
+.sub{
+    height: 0;
+}
+
 .head__subtext{
     color: $subtextColor;
+}
+
+.header__sign-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .head__bio{
@@ -102,6 +125,21 @@ p{
 
 }
 
+.header__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__brand{
+    display: flex;
+    align-items: center;
+}
+
+.header__date{
+    display: flex;
+}
+
 .title{
     display: flex;
     justify-content: space-between;
@@ -110,7 +148,7 @@ p{
     height: 84px;   
 }
 
-/* .title__img{
+.title__img{
     margin-right: 15px;
 }
 
@@ -133,9 +171,9 @@ p{
 .title__temperature{
 
 }
- */
 
-.nav{
+
+.header__nav{
     background-color: $titleColor;
     padding-bottom: $paddingBottom;
 }
@@ -167,6 +205,7 @@ p{
 }
 
 .line{
+    width: 1100px;
     display: flex;
     align-items: center;
     background-color: $backColor;
