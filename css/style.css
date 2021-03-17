@@ -72,12 +72,13 @@ p {
   border-right: 3px solid grey;
 }
 
-.head__subscribe {
-  margin-top: 11px;
+.header__subscribe-text {
+  padding-left: 10px;
 }
 
-.sub {
+.head__text {
   height: 0;
+  padding-bottom: 5px;
 }
 
 .head__subtext {
@@ -164,6 +165,7 @@ p {
 
 .line {
   width: 1100px;
+  padding: 0;
   display: flex;
   align-items: center;
   background-color: #30363D;
@@ -177,7 +179,7 @@ p {
   height: 75px;
   padding-right: 25px;
   padding-left: 25px;
-  border-right: 1px solid #D9DADB;
+  border-right: 1px solid #4B5157;
 }
 
 .news__topic:last-child {
@@ -190,6 +192,7 @@ p {
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   line-height: 25px;
+  padding-right: 10px;
 }
 
 .top {
@@ -215,9 +218,11 @@ p {
   height: 59px;
   background-color: #ffffff;
   border-radius: 0 10px 0 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   font-family: "Lato", sans-serif;
+  padding-top: 20px;
+  padding-left: 25px;
 }
 
 .column {
@@ -225,6 +230,7 @@ p {
   height: 99px;
   border-top: 1px solid #D9DADB;
   border-bottom: 1px solid #D9DADB;
+  width: 263px;
 }
 
 .column:last-child {
@@ -236,10 +242,34 @@ p {
   font-family: "Lato", sans-serif;
   font-size: 12px;
   color: #3bbdc4;
+  padding-top: 17px;
+  padding-left: 25px;
+  width: 263px;
+  letter-spacing: 0.5px;
 }
-.column__title p {
+
+.column > p {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #4B5157;
+  padding-top: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.cars {
+  color: #6E99AE;
+}
+
+.movies {
+  color: #AC8EE3;
+}
+
+.nfl {
+  color: #FFA34D;
+}
+
+.tech {
+  color: #3DC47E;
 }
