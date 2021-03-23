@@ -4,6 +4,7 @@ $textColor: #4B5157;
 $subtextColor: #939699;
 $backColor: #30363D;
 $border: 1px solid #D9DADB;
+$buttonColor:#4592FF;
 $paddingTop: 30px;
 $paddingBottom: 30px;
 $paddingRight: 30px;
@@ -14,6 +15,7 @@ $mainFontFamily: 'Lato', sans-serif;
 $mainFontWeight: 400;
 $fontWeight: bold;
 $borderRadius: 10px;
+$borderRadiusButton: 20px;
 
 
 *{
@@ -54,6 +56,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50px;
+    border-right: $border;
 }
 
 .head__icon{
@@ -63,8 +67,6 @@ p{
 .head__text{
     display: flex;
     align-items: center;
-    border-right: $border;
-    height: 50px;
     padding-right: 25px;
     font-weight: $fontWeight;
 }
@@ -99,11 +101,6 @@ p{
     padding-left: 10px;
 }
 
-.head__text{
-    height: 0;
-    padding-bottom: 5px;
-}
-
 .head__subtext{
     color: $subtextColor;
 }
@@ -115,11 +112,7 @@ p{
 }
 
 .head__bio{
-
-}
-
-.head__sing{
-
+    margin-right: 12px;
 }
 
 .header__info{
@@ -151,10 +144,6 @@ p{
 
 .title__text{
     margin-right: 130px;
-}
-
-.title__logo{
-    margin-right: 186px;
 }
 
 .title__date{
@@ -232,6 +221,7 @@ p{
     font-weight: $fontWeight;
     line-height: 25px;
     padding-right: 10px;
+    width: 154px;
 } 
 
 .top{
@@ -247,6 +237,83 @@ p{
     width: 877px;
     height: 570px;
     border-radius: 10px 0 0 10px;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+    padding-top: 55px;
+}
+
+.author__img{
+    margin-right: 10px;
+}
+
+.first{
+    font-family: $mainFontFamily;
+    color: $color;
+    font-weight: $mainFontWeight;
+    font-size: $mainFontSize;
+    opacity: 0.85;
+}
+
+.last{
+    font-family: $mainFontFamily;
+    color: $color;
+    font-weight: $mainFontWeight;
+    font-size: 12px;
+    opacity: 0.4;
+}
+
+.frontPage{
+    padding-top: 145px;
+    padding-left: 55px;
+}
+
+.frontPage__topic{
+    color: rgba(69, 146, 255, 1);
+    font-family: $mainFontFamily;
+    font-size: 12px;
+    font-weight: $mainFontWeight;
+    padding-bottom: 25px;
+}
+
+.frontPage__title{
+    color: $color;
+    font-weight: $fontWeight;
+    font-size: 40px;
+    font-family: $tilteFontFamily;
+    width: 598px;
+}
+
+.frontPage__wrap{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+
+    
+}
+
+button{
+    width: 138px;
+    height: 40px;
+    background-color: $buttonColor;
+    border-radius: $borderRadiusButton;
+    border: none;
+    font-family: $mainFontFamily;
+    font-size: $mainFontSize;
+    color: $color;
+    font-weight: $fontWeight;
+
+    img{
+        padding-left: 8px;
+    }
+}
+
+.frontPage__wrap--play{
+    padding-left: 30px;
+    padding-right: 10px;
 }
 
 .topics{
@@ -311,4 +378,68 @@ p{
 
 .tech{
     color: #3DC47E;    
+}
+
+
+
+
+/* Адаптив */
+
+@media screen and (max-width: 1145px){
+    .header__nav{
+        display: none;
+    }
+
+    .header__info{
+        margin-bottom: 2px
+    }
+
+    .header__brand{
+        display: none;
+    }
+
+    .header__title{
+       margin: 0 auto;
+       height: 60px;
+       display: flex;
+       align-items: center;
+    }
+
+    .header__date{
+        display: none;
+    }
+
+    .news{
+        padding-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:1042px){
+    .header__search{
+        padding-right: 135px;
+    }
+
+    .header__subscribe{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px){
+
+    .head__sign{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:960px){
+
+    /* .head__search{
+        padding-left: 20px;
+    } */
+    
+    .head__input::placeholder{
+        color:transparent;
+    }
 }
