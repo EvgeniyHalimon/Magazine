@@ -320,6 +320,7 @@ button{
 }
 
 .frontPage__wrap--play{
+    max-width: 100%;
     padding-left: 30px;
     padding-right: 10px;
 }
@@ -521,6 +522,14 @@ button{
         width: 420px;
     }
 
+
+    .news__topic__title{
+        font-size: 12px;
+    }
+
+    .news__topic__img{
+        width: 20%;
+    }
 }
 
 @media screen and (max-width:820px){
@@ -530,7 +539,7 @@ button{
     }
 
     .news__topic__title{
-        width: 60%;
+        width: 80%;
     }
 
     .news__topic{
@@ -555,11 +564,140 @@ button{
         display: none;
     }
 
+    .news__topic{
+        padding-right: 0;
+    }
+
+    .news__topic__title{
+        padding-right: 0px;
+    }
+
+    .news__topic__img{
+        display: none;
+        padding-right: 0;
+    }
+
 }
+
+@media screen and (max-width:719px){
+
+    .back{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .frontPage {
+        padding-top: 122px;
+    }
+
+    .top__container{
+        flex-wrap: wrap;
+    }
+
+    .frontPage__wrap {
+        padding-bottom: 40px;
+    }
+
+    .topics{
+        text-align: center;
+    }
+
+    .topics__title{
+        padding-left: 0px;
+    }
+
+    .column__title{
+        padding-left: 0px;
+        padding-top: 14px;
+    }
+
+    .column{
+        height: 80px;
+    }
+
+    .column > p {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+}
+
+@media screen and (max-width:599px){
+
+    .news{
+        height: 440px;
+    }
+
+    .line{
+        height: 80%;
+    }
+
+    .news__topic__title{
+        font-size: 10px;
+    }
+
+    .frontPage {
+        padding-top: 50px;
+    }
+
+    .frontPage__title{
+        padding-right: 92px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+
+    .line{
+        height: 25%;
+    }
+
+    .news__topic__title{
+        line-height: 16px;
+    }
+}
+
 
 @media screen and (max-width:479px){
 
     .head__text{
         display: none;
     }
+}
+
+@media screen and (max-width:425px){
+
+    .first{
+        font-size: 12px;
+    }
+
+    .last{
+        font-size: 10px;
+    }
+
+    .frontPage__title{
+        padding-right: 70px;
+        font-size: 25px;
+    }
+
+    .frontPage__wrap--play{
+        width: 25%;
+    }
+
+    button{
+        width: 112px;
+        height: 35px;
+        font-size: 12px;
+
+        img{
+            display: none;
+        }
+    }
+
+    .news__topic__title {
+        font-size: 8px;
+        line-height: 13px;
+    }
+
 }
