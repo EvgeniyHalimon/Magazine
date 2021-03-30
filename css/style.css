@@ -301,6 +301,7 @@ button img {
   font-family: "Lato", sans-serif;
   padding-top: 20px;
   padding-left: 25px;
+  letter-spacing: 0.5px;
 }
 
 .column {
