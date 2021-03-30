@@ -29,7 +29,6 @@ p {
   align-items: center;
   background-color: #ffffff;
   border-bottom: 1px solid #D9DADB;
-  height: 50px;
 }
 
 .header__sections {
@@ -38,6 +37,7 @@ p {
   align-items: center;
   height: 50px;
   border-right: 1px solid #D9DADB;
+  padding-right: 25px;
 }
 
 .head__icon {
@@ -45,10 +45,12 @@ p {
 }
 
 .head__text {
-  display: flex;
-  align-items: center;
-  padding-right: 25px;
   font-weight: bold;
+}
+
+.header__search {
+  padding-left: 5px;
+  padding-top: 15px;
 }
 
 .head__search {
@@ -57,13 +59,12 @@ p {
 
 .head__input {
   border: none;
-  width: 600px;
+  width: 590px;
   color: #939699;
 }
 
 .header__subscribe {
   display: flex;
-  align-items: center;
 }
 
 .head__img {
@@ -74,7 +75,8 @@ p {
 }
 
 .header__subscribe-text {
-  padding-left: 10px;
+  align-self: center;
+  margin-left: 10px;
 }
 
 .head__subtext {
@@ -416,15 +418,15 @@ button img {
 }
 @media screen and (max-width: 1042px) {
   .header__search {
-    padding-right: 135px;
+    padding-right: 0px;
   }
 
-  .header__subscribe {
+  .head__img {
     display: none;
   }
 
   .head__bio {
-    margin-right: 0px;
+    margin-right: 5px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -441,11 +443,13 @@ button img {
 }
 @media screen and (max-width: 960px) {
   .head__input {
-    width: 520px;
+    width: 500px;
   }
 
   .head__input::placeholder {
     color: transparent;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
   }
 
   .news__topic__title {
