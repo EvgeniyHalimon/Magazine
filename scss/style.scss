@@ -258,7 +258,7 @@ p{
     margin-right: 10px;
 }
 
-.first{
+.small-title{
     font-family: $mainFontFamily;
     color: $color;
     font-weight: $mainFontWeight;
@@ -266,7 +266,7 @@ p{
     opacity: 0.85;
 }
 
-.last{
+.small-subtitle{
     font-family: $mainFontFamily;
     color: $color;
     font-weight: $mainFontWeight;
@@ -288,7 +288,7 @@ p{
     font-size: 40px;
     font-family: $tilteFontFamily;
     margin-bottom: 40px;
-    
+    max-width: 83%;
 }
 
 .article-tabs__wrap{
@@ -673,11 +673,11 @@ p{
 
 @media screen and (max-width:425px){
 
-    .first{
+    .small-title{
         font-size: 12px;
     }
 
-    .last{
+    .smalll-subtitle{
         font-size: 10px;
     }
 
