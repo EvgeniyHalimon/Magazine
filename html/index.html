@@ -33,6 +33,10 @@
                     <p class="head__sign">Sign In</p>
                 </div>
             </div>
+            <div class="input">
+                <img src="../img/Search.svg" alt="search" class="head__search">
+                <input type="search" placeholder="Search" class="head__input">
+            </div>  
             <div class="header__info">
                 <div class="header__brand">
                     <img src="../img/liberty.png" alt="liberty" class="title__img">
@@ -49,7 +53,6 @@
             </div>
         </div>
         <div class="header__nav">
-            <!-- ul>(li>a)*11 -->
             <div class="wrapper">
                 <ul class="nav__list">
                     <li class="nav__list-item">
@@ -87,88 +90,84 @@
                     </li>
                 </ul>
             </div>
-        </div>   
+        </div>     
     </header>
-    
-    <div>
-        <div class="news">
-            <div class="line wrapper">
-                
-                <div class="news__topic">
-                    <h2 class="news__topic__title">25 Songs That Tell Us Where Music Is Going</h2>
-                    <img src="../img/guitar.png" class="news__topic__img" alt="pic">
-                </div>
-                <div class="news__topic">
-                    <h2 class="news__topic__title">These Ancient Assassins Eat Their Own Kind</h2>
-                    <img src="../img/butterfly.png" class="news__topic__img" alt="pic">
-                </div>
-                <div class="news__topic">
-                    <h2 class="news__topic__title">How Do You Teach People to Love Difficult Music?</h2>
-                    <img src="../img/man3.png" class="news__topic__img" alt="pic">
-                </div>
-                <div class="news__topic">
-                    <h2 class="news__topic__title">International Soccer’s Man of Mystery</h2>
-                    <img src="../img/stadium.png" class="news__topic__img" alt="pic">
-                </div>
-            </div> 
+    <div class="news">
+        <div class="news__wrapper wrapper">
+            <div class="news__topic">
+                <h2 class="news__topic__title">25 Songs That Tell Us Where Music Is Going</h2>
+                <img src="../img/guitar.png" class="news__topic__img" alt="pic">
+            </div>
+            <div class="news__topic">
+                <h2 class="news__topic__title">These Ancient Assassins Eat Their Own Kind</h2>
+                <img src="../img/butterfly.png" class="news__topic__img" alt="pic">
+            </div>
+            <div class="news__topic">
+                <h2 class="news__topic__title">How Do You Teach People to Love Difficult Music?</h2>
+                <img src="../img/man3.png" class="news__topic__img" alt="pic">
+            </div>
+            <div class="news__topic">
+                <h2 class="news__topic__title">International Soccer’s Man of Mystery</h2>
+                <img src="../img/stadium.png" class="news__topic__img" alt="pic">
+            </div>
         </div>
-        <div class="top">
-            <div class="wrapper">
-                <div class="top__container">
-                    <div class="back">
-                        <div class="author">
-                            <img src="../img/man2.svg" alt="photo" class="author__img">
-                            <div>
-                                <p class="first">By Benjamin Turner</p>
-                                <p class="last">Traveler</p>
-                            </div>
+    </div>
+    <div class="article-tabs">
+        <div class="wrapper">
+            <div class="article-tabs__container">
+                <div class="article-tabs__content">
+                    <div class="author">
+                        <img src="../img/man2.svg" alt="photo" class="author__img">
+                        <div>
+                            <p class="small-title">By Benjamin Turner</p>
+                            <p class="small-subtitle">Traveler</p>
                         </div>
-                        <div class="frontPage">
-                            <p class="frontPage__topic">DESTINATIONS</p>
-                            <h1 class="frontPage__title">In Southeast England, White Cliffs and Fish</h1>
-                            <div class="frontPage__wrap">
-                                <button>Read more <img src="../img/Arrow.svg" alt=""></button>
-                                <img src="../img/play.svg" alt="play" class="frontPage__wrap--play">
-                                <div class="">
-                                    <p class="first">The chalk cliff of Beachy Head</p>
-                                    <p class="last">18:05</p>
+                    </div>
+                    <div>
+                        <p class="article-tabs__topic">DESTINATIONS</p>
+                        <h1 class="article-tabs__title">In Southeast England, White Cliffs and Fish</h1>
+                        <div class="article-tabs__wrap">
+                            <button class="button"><p>Read more</p><img src="../img/Arrow.svg" alt=""></button>
+                            <div class="player">
+                                <img src="../img/play.svg" alt="play" class="player__icon">
+                                <div>
+                                    <p class="small-title">The chalk cliff of Beachy Head</p>
+                                    <p class="small-subtitle">18:05</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="topics">
-                            <h2 class="topics__title">RECOMMENDED FOR YOU</h2>
-                            <div class="column">
-                                <h3 class="column__title">FOOD</h3>
-                                <p>For Chicken-Fried Steak, Too Much Is Just Enough</p>
-                            </div>
-                            <div class="column">
-                                <h3 class="column__title cars">CARS</h3>
-                                <p>Storm Has Car Dealers Doing Swift Business</p>
-                            </div>
-                            <div class="column">
-                                <h3 class="column__title movies">MOVIES</h3>
-                                <p>War Is Hell? In New Military Dramas, It’s One-Dimensional</p>
-                            </div>
-                            <div class="column">
-                                <h3 class="column__title nfl">NFL</h3>
-                                <p>11 surprising stat rankings for active NFL players</p>
-                            </div>
-                            <div class="column">
-                                <h3 class="column__title tech">TECH REVIEWS</h3>
-                                <p>The bookcases you can buy online and assemble yourself</p>
-                            </div>
-                        </div>
-                    </div>  
+                </div>
+                <div class="article-tabs__nav">
+                    <h2 class="column__title">RECOMMENDED FOR YOU</h2>
+                    <ul class="article-tabs__list">
+                        <li class="article-tabs__item">
+                            <h3 class="article-tabs__theme">FOOD</h3>
+                            <p>For Chicken-Fried Steak, Too Much Is Just Enough <img src="../img/icon.svg" alt="play" class="li-icon"></p>
+                        </li>
+                        <li class="article-tabs__item">
+                            <h3 class="article-tabs__theme cars">CARS</h3>
+                            <p>Storm Has Car Dealers Doing Swift Business</p>
+                        </li>
+                        <li class="article-tabs__item">
+                            <h3 class="article-tabs__theme movies">MOVIES</h3>
+                            <p>War Is Hell? In New Military Dramas, It’s One-Dimensional</p>
+                        </li>
+                        <li class="article-tabs__item">
+                            <h3 class="article-tabs__theme nfl">NFL</h3>
+                            <p>11 surprising stat rankings for active NFL players <img src="../img/icon.svg" alt="play" class="li-icon"></p>
+                        </li>
+                        <li class="article-tabs__item">
+                            <h3 class="article-tabs__theme tech">TECH REVIEWS</h3>
+                            <p>The bookcases you can buy online and assemble yourself</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="">
-        
-    </div>
-
 </body>
 </html>
+
+
