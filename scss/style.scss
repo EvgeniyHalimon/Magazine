@@ -38,10 +38,10 @@ p{
 }
 
 .wrapper{
-    width: 1140px;
+    width: 1160px;
     margin: 0 auto;
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
     
 }
 
@@ -196,7 +196,7 @@ p{
 }
 
 .news__wrapper{
-    max-width: 1100px;
+    max-width: 1140px;
     display: flex;
     background-color: $backColor;
     border-radius: $borderRadius;
@@ -410,7 +410,7 @@ p{
     }
 
     .news__wrapper{
-        width: 96%;
+        width: 98%;
     }
 
     .news__topic__title{
@@ -445,7 +445,7 @@ p{
     }
 
     .news__topic__img{
-        width: 30%;
+        width: 25%;
     }
 
 }
@@ -464,7 +464,6 @@ p{
 
     .news__topic__title{
         width: 95%;
-        margin: 0 auto;
     }
 
     .article-tabs__title{
@@ -495,9 +494,6 @@ p{
         font-size: 14px;
     }
 
-    .news__topic__img{
-        width: 20%;
-    }
 }
 
 @media screen and (max-width:820px){
@@ -521,11 +517,16 @@ p{
 @media screen and (max-width:768px){
 
     .news__wrapper{
-        width: 95%;
+        width: 97%;
+        justify-content: center;
     }
 
     .news__topic{
         padding-right: 0;
+    }
+
+    .news__topic__title{
+        margin-right: 0;
     }
 
     .news__topic__img{
@@ -568,10 +569,6 @@ p{
 
 @media screen and (max-width:650px){
 
-    .news__wrapper{
-        width: 94%;
-    }
-
     .head__input{
         width: 250px;
     }
@@ -580,32 +577,24 @@ p{
 @media screen and (max-width:599px){
 
     .news__wrapper{
-        height: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .news__topic{
+        border-right: none ;
+        padding: 5px 0 5px 15px;
+        border-bottom: $border;
     }
 
     .news__topic__title{
-        font-size: 14px;
+        font-size: 13px;
         max-width: fit-content;
     }
 }
 
 @media screen and (max-width:580px){
-
-    .news__wrapper{
-        padding: 10px 0;
-    }
-
-    .news__wrapper{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .news__topic{
-        border-right: none ;
-        padding: 5px 0;
-        border-bottom: $border;
-    }
-
 
     .header__sections{
         border: none;
@@ -653,7 +642,7 @@ p{
     }
 
     .article-tabs__wrap {
-        flex-wrap: wrap;
+        display: block;
     }
 
     .button{
@@ -671,7 +660,7 @@ p{
 @media screen and (max-width:440px){
 
     .news__wrapper{
-        width: 90%;
+        width: 95%;
     }
 
 }
@@ -693,7 +682,7 @@ p{
     }
 
     .player__icon{
-        width: 30%;
+        width: 15%;
     }
 
     .news__topic__title {
