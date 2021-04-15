@@ -302,8 +302,7 @@ p{
 }
 
 .button{
-    width: 138px;
-    height: 40px;
+    padding: 10px 25px;
     margin-right: 30px;
     background-color: $buttonColor;
     border-radius: $borderRadiusButton;
@@ -399,24 +398,22 @@ p{
 }
 
 
-.item1{
-    width: 555px;
-    height: 370px;
+.card1{
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    grid-area: 1 / 1;
+    grid-area: 1 / 1 / span 2 / span 2;
 }
 
 .card__top{
     display: flex;
 }
 
-.inner{
+.card__info{
     padding: 35px 0px 49px 35px;
 }
 
-.inner__theme{
+.card__info__theme{
     font-family: $mainFontFamily;
     font-size: 12px;
     line-height: 15px;
@@ -425,14 +422,14 @@ p{
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-.inner__title{
+.card__info__title{
     font-family: $tilteFontFamily;
     font-weight: $fontWeight;
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 25px;
 }
-.inner__subtitle{
+.card__info__subtitle{
     line-height: 20px;
 }
 
@@ -469,13 +466,11 @@ span{
     margin-right: 6px;
 }
 
-.item2{
+.card2{
     border-radius: 10px;
     overflow: hidden;
-    width: 263px;
-    height: 370px;
     background-color: white;
-    grid-area: 3 / 1;
+    grid-area: 3 / 1 / span 2;
     
 
     h3{
@@ -483,21 +478,21 @@ span{
     }
 }
 
-.article-grid__title{
+.card__title{
     font-size: 16px;
     margin-bottom: 5px;
     line-height: 25px;
     font-weight: $fontWeight;
     font-family: $tilteFontFamily;
 }
-.article-grid__text{
+.card__text{
     margin-bottom: 10px;
     font-size: $mainFontSize;
     line-height: 20px;
     font-weight: $mainFontWeight;
     font-family: $mainFontFamily;
 }
-.article-grid__subtext{
+.card__subtext{
     font-size: 12px;
     color: $subtextColor;
     line-height: 15px;
@@ -506,36 +501,31 @@ span{
 }
 
 
-.item3, .item4, .item6, .item7{
-    width: 263px;
-    height: 170px;
+.card3, .card4, .card6, .card7{
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
     padding: 25px 25px 0 25px;
 }
 
-.item3{
+.card3{
     grid-area: 3 / 2;
 }
 
-.item4{
+.card4{
     grid-area: 4 / 2;
 }
 
 
-.item5{
+.card5{
     background-image: url(../img/bighand.png);
     border-radius: 10px;
     overflow: hidden;
-    width: 263px;
-    height: 370px;
-    margin-bottom: 30px;
     padding: 18px 18px 35px 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    grid-area: 1/3;
+    justify-content: space-between;
+    grid-area: 1/3 / span 2;
 
     h3{
         color: $color;
@@ -544,21 +534,19 @@ span{
     }
 }
 
-.extra{
+.card__extra{
     text-align: center;
     width: 66px;
-    height: 20px;
     background-color: #3DC47E;
     border-radius: 3px;
-    margin-bottom: 117px;
     color: $color;    
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
-    padding-top: 2px;  
+    padding: 2px 0;  
 }
 
-.theme{
+.card__theme{
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #e7d9ff;
@@ -566,10 +554,6 @@ span{
     line-height: 15px;
     letter-spacing: 0.5px;
     font-family: $mainFontFamily;
-}
-
-.title{
-    margin-bottom: 15px;
 }
 
 .extra__card-wrap{
@@ -600,20 +584,18 @@ span{
     margin-right: 0;
 }
 
-.item6{
+.card6{
     grid-area: 3 / 3;
 }
 
-.item7{
+.card7{
     grid-area: 4 / 3;
 }
 
-.item8{
+.card8{
     background-color: #6E99AE;
-    width: 263px;
-    height: 770px;
     border-radius: 10px;
-    grid-area: 1 / 4;
+    grid-area: 1 / 4 / span 4;
 }
 
 .columns{
@@ -669,8 +651,9 @@ span{
 .banner{
     background-image: url(../img/banner.svg);
     background-position: center;
-    height: 270px;
     text-align: center;
+    padding: 50px 210px 55px 210px;
+    background-size: 100%;
 }
 
 .banner__title{
@@ -679,15 +662,29 @@ span{
     font-weight: $fontWeight;
     font-size: 40px;
     line-height: 50px;
-    padding-top: 50px;
     margin: 0 auto 25px auto;
-    width: 955px;
-    
+}
+
+.banner__button{
+    margin-right: 0;
 }
 
 
 
 /* Адаптив */
+
+
+@media screen and (max-width: 1335px){
+    .banner{
+        padding: 40px 210px;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .banner{
+        padding: 30px 210px;
+    }
+}
 
 @media screen and (max-width: 1160px){
     .grid{
@@ -697,20 +694,20 @@ span{
         grid: repeat(8, 170px) / repeat(2, 263px);
     }
 
-    .item5{
-        grid-area: 5/1;
+    .card5{
+        grid-area: 5/1 / span 2;
     }
     
-    .item6{
+    .card6{
         grid-area: 7/1;
     }    
 
-    .item7{
+    .card7{
         grid-area: 8/1;
     }
 
-    .item8{
-        grid-area: 5/2;
+    .card8{
+        grid-area: 5/2 / span 4;
     }
 }
 
@@ -747,6 +744,21 @@ span{
     .article-tabs__content{
         width: 76%;
         height: auto;
+    }
+
+    .banner{
+        padding: 20px 210px;
+    }
+}
+
+@media screen and (max-width:1069px){
+    .banner{
+        padding: 17px 90px;
+    }
+
+    .banner__title{
+        font-size: 35px;
+        line-height: 30px;
     }
 }
 
@@ -835,10 +847,22 @@ span{
     .news__topic{
         padding-right: 10px;
         padding-left: 10px;
+    } 
+}
+
+@media screen and (max-width:780px){
+    .banner {
+        padding: 40px 35px;
+        background-size: auto;
     }
 
-    
+    .banner__title{
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 auto 13px auto;
+    }
 }
+
 
 @media screen and (max-width:768px){
 
@@ -901,15 +925,11 @@ span{
         padding-top: 700px;
     }
 
-    .item1{
-        width: 263px;
-    }
-
-    .inner{
+    .card__info{
         padding: 18px 18px 45px 25px;
     }
 
-    .inner__title{
+    .card__info__title{
         font-size: 24px;
     }
 
@@ -925,26 +945,30 @@ span{
         margin-right: 10px;
     }
 
-    .item2{
-        grid-area: 3/1;
+    .card1{
+        grid-area: 1/1/span 2
     }
-    .item3{
+
+    .card2{
+        grid-area: 3/1 / span 2;
+    }
+    .card3{
         grid-area: 5/1;
     }
-    .item4{
+    .card4{
         grid-area: 6/1;
     }
-    .item5{
-        grid-area: 7/1;
+    .card5{
+        grid-area: 7/1 / span 2; 
     }
-    .item6{
+    .card6{
         grid-area: 9/1;
     }
-    .item7{
+    .card7{
         grid-area: 10/1;
     }
-    .item8{
-        grid-area: 11/1;
+    .card8{
+        grid-area: 11/1 / span 4;
     }
 }
 
@@ -974,6 +998,12 @@ span{
         font-size: 13px;
         max-width: fit-content;
         margin: 0 auto;
+    }
+
+    .banner__title{
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 auto 10px auto;
     }
 }
 
@@ -1034,7 +1064,16 @@ span{
     }
 
     .article-grid{
-        padding-top: 750px;
+        padding-top: 770px;
+    }
+
+    .banner{
+        padding: 80px 10px;
+        background-size: auto;
+    }
+
+    .banner__button{
+        margin-bottom: 0;
     }
 }
 
