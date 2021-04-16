@@ -669,6 +669,56 @@ span{
     margin-right: 0;
 }
 
+.news-feed{
+    background-color: #E5E5E5;
+    padding-top: 60px;
+}
+
+.news-feed__list{
+    padding: 25px;
+    background-color: $color;
+    border-radius: $borderRadius;
+    max-width: 848px;
+}
+
+.news-feed__item:first-child{
+    padding-top: 0;
+}
+
+.news-feed__item:last-child{
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+.news-feed__item{
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: $border;
+}
+
+.news-feed__photo{
+    margin-right: 25px;
+}
+
+.news-feed__wrap{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.item__bottom{
+    display: flex;
+
+    p{
+        margin-right: 11px;
+    }
+}
+
+.item__subtitle{
+    
+}
+
 
 
 /* Адаптив */
