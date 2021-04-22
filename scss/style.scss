@@ -530,16 +530,19 @@ span{
     }
 }
 
-.card__extra{
+.marker{
     text-align: center;
-    width: 66px;
-    background-color: #3DC47E;
     border-radius: 3px;
-    color: $color;    
+    color: $color;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
-    padding: 2px 0;  
+    padding: 5px 0;
+}
+
+.card__extra{
+    width: 66px;
+    background-color: #3DC47E;  
 }
 
 .card__theme{
@@ -911,14 +914,7 @@ input[type="checkbox"]:checked + label::before {
 
 .slider__text{
     width: 45px;
-    text-align: center;
     background-color: #FF4F52;
-    border-radius: 3px;
-    color: $color;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    padding: 5px 0;
 }
 
 .slider__author{
@@ -1432,6 +1428,31 @@ input[type="checkbox"]:checked + label::before {
         font-size: 16px;
         line-height: 24px;
         margin: 0 auto 10px auto;
+    }
+
+    .slider__grid {
+        display: grid;
+        justify-content: center;
+        grid-gap: 30px;
+        grid: repeat(6, 170px)/repeat(1, 262px);
+    }
+
+    .slider__grid--item1 {
+        grid-area: 1/1/ span 3 / span 1;
+        background-position: right;
+    }
+
+    .slider__grid--item2 {
+        grid-area: 4/1/span 2/span 1;
+        background-image: none;
+    }
+
+    .slider__grid--item3 {
+        grid-area: 5/1;
+    }
+
+    .slider__grid--item4 {
+        grid-area: 6/1;
     }
 }
 
