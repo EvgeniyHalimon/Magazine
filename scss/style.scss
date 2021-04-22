@@ -530,16 +530,19 @@ span{
     }
 }
 
-.card__extra{
+.marker{
     text-align: center;
-    width: 66px;
-    background-color: #3DC47E;
     border-radius: 3px;
-    color: $color;    
+    color: $color;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
-    padding: 2px 0;  
+    padding: 5px 0;
+}
+
+.card__extra{
+    width: 66px;
+    background-color: #3DC47E;  
 }
 
 .card__theme{
