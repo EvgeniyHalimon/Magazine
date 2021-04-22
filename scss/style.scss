@@ -1363,25 +1363,27 @@ input[type="checkbox"]:checked + label::before {
         margin-bottom: 10px;
     }
 
+   
     .slider__grid {
         display: grid;
         justify-content: center;
         grid-gap: 30px;
-        grid: repeat(7, 171px)/repeat(1, 262px);
-    }
+        grid: repeat(6, 170px)/repeat(2, 262px);
+    }    
+    
 
     .slider__grid--item1{
-        grid-area: 1/1/span 3/span 1;
+        grid-area: 1/1/span 3/span 2;
         background-position: right;
+    }
+
+    .grid__button{
+        margin-bottom: 50px;
     }
 
     .slider__title{
         font-size: 30px;
         line-height: 40px;
-    }
-
-    .slider__point{
-        display: none;
     }
 
     .slider__grid--item2 {
@@ -1390,11 +1392,11 @@ input[type="checkbox"]:checked + label::before {
     }
 
     .slider__grid--item3 {
-        grid-area: 6/1;
+        grid-area: 4/2;
     }
 
     .slider__grid--item4 {
-        grid-area: 7/1;
+        grid-area: 5/2;
     }
 }
 
