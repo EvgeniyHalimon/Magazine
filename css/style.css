@@ -1115,12 +1115,21 @@ input[type=checkbox]:checked + label::before {
     grid: repeat(14, 170px)/repeat(1, 263px);
   }
 
+  .article-tabs__list {
+    max-width: 100vh;
+  }
+
   .article-grid {
     padding-top: 700px;
   }
 
   .card__info {
     padding: 18px 18px 45px 25px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .head__input {
+    width: 250px;
   }
 
   .card__info__title {
@@ -1162,6 +1171,13 @@ input[type=checkbox]:checked + label::before {
   .card6 {
     grid-area: 9/1;
   }
+}
+@media screen and (max-width: 599px) {
+  .news__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
 
   .card7 {
     grid-area: 10/1;
@@ -1195,8 +1211,20 @@ input[type=checkbox]:checked + label::before {
   .head__input {
     width: 250px;
   }
+  .head__input .news__topic {
+    border-right: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #D9DADB;
+  }
+  .head__input .news__topic__title {
+    font-size: 13px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 650px) and (max-width: 580px) {
   .news__wrapper {
     display: flex;
     flex-direction: column;
@@ -1223,7 +1251,16 @@ input[type=checkbox]:checked + label::before {
     margin: 0 auto 10px auto;
   }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 650px) and (max-width: 580px) {
+  .header__sections {
+    border: none;
+  }
+
+  .head__input {
+    width: 94%;
+    height: 25px;
+  }
+
   .header__sections {
     border: none;
   }
@@ -1254,7 +1291,7 @@ input[type=checkbox]:checked + label::before {
     margin-top: 10px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) and (max-width: 500px) {
   .head__input {
     width: 90%;
   }
@@ -1289,12 +1326,12 @@ input[type=checkbox]:checked + label::before {
     margin-bottom: 0;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 650px) and (max-width: 440px) {
   .news__wrapper {
     width: 95%;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 650px) and (max-width: 425px) {
   .small-title {
     font-size: 12px;
   }

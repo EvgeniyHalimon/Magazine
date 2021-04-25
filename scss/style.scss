@@ -303,7 +303,6 @@ p{
     background-color: $buttonColor;
     border-radius: $borderRadiusButton;
     border: none;
-
     p{
         display: inline-block;
         margin-right: 8px;
@@ -1173,7 +1172,13 @@ input[type="checkbox"]:checked + label::before {
         justify-content: center;
         grid-gap: 30px;
         grid: repeat(14, 170px) / repeat(1, 263px);
+
     }
+
+    .article-tabs__list{
+        max-width: 100vh
+    }
+
 
     .article-grid{
         padding-top: 700px;
@@ -1181,6 +1186,14 @@ input[type="checkbox"]:checked + label::before {
 
     .card__info{
         padding: 18px 18px 45px 25px;
+    }
+}
+
+
+@media screen and (max-width:650px){
+
+    .head__input{
+        width: 250px;
     }
 
     .card__info__title{
@@ -1218,6 +1231,16 @@ input[type="checkbox"]:checked + label::before {
     .card6{
         grid-area: 9/1;
     }
+
+}
+
+@media screen and (max-width:599px){
+
+    .news__wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
     .card7{
         grid-area: 10/1;
     }
@@ -1251,10 +1274,20 @@ input[type="checkbox"]:checked + label::before {
 
     .head__input{
         width: 250px;
+    .news__topic{
+        border-right: none ;
+        padding: 5px 0;
+        border-bottom: $border;
+    }
+
+    .news__topic__title{
+        font-size: 13px;
+        max-width: fit-content;
+        margin: 0 auto;
     }
 }
 
-@media screen and (max-width:599px){
+@media screen and (max-width:580px){
 
     .news__wrapper{
         display: flex;
@@ -1282,6 +1315,15 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media screen and (max-width:580px){
+
+    .header__sections{
+        border: none;
+    }
+
+    .head__input{
+        width: 94%;
+        height: 25px;
+    }
 
     .header__sections{
         border: none;
@@ -1351,12 +1393,6 @@ input[type="checkbox"]:checked + label::before {
     }
 }
 
-
-@media screen and (max-width:479px){
-
-    
-}
-
 @media screen and (max-width:440px){
 
     .news__wrapper{
@@ -1375,7 +1411,6 @@ input[type="checkbox"]:checked + label::before {
         font-size: 10px;
     }
 
-    
 
     .article-tabs__title{
         font-size: 25px;
@@ -1392,8 +1427,4 @@ input[type="checkbox"]:checked + label::before {
 
 }
 
-@media screen and (max-width:400px){
-
-
 }
-
