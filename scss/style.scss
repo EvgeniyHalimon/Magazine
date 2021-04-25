@@ -686,39 +686,32 @@ span{
     margin-right: 30px;
 }
 
-.news-feed__item:first-child{
+.news-feed__post:first-child{
     padding-top: 0;
 }
 
-.news-feed__item:last-child{
+.news-feed__post:last-child{
     padding-bottom: 0px;
     border-bottom: none;
 }
 
-.news-feed__item{
+.news-feed__post{
     display: flex;
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: $border;
 }
 
-.news-feed__photo{
+.post__photo{
     margin-right: 25px;
 }
 
-.news-feed__wrap{
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-}
-
-
-
-.item__theme{
+.post__theme{
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .theme1{
@@ -741,7 +734,7 @@ span{
     color: #AC8EE3;
 }
 
-.item__title{
+.post__title{
     font-family: $tilteFontFamily;
     font-size: 20px;
     font-weight: $fontWeight;
@@ -749,13 +742,16 @@ span{
     letter-spacing: 0px;
     text-align: left;
     color: $titleColor;
+    margin-bottom: 10px;
 }
 
-.item__text{
+.post__text{
     line-height: 20px;
+    width: 102%;
+    margin-bottom: 20px;
 }
 
-.item__bottom{
+.post__bottom{
     display: flex;
     align-items: center;
 
@@ -769,7 +765,7 @@ span{
     }
 }
 
-.item-subtitle{
+.post-subtitle{
     font-size: 12px;
     line-height: 15px;
     color: $subtextColor;
@@ -808,16 +804,13 @@ input[type="checkbox"]:checked + label::before {
     background-color: $color;
 }
 
-.recomendation__list:last-child{
-    border: none;
-}
-
 .recomendation__item{
-    padding: 17px 25px 0 25px;
+    padding: 0 25px 0 25px;
 }
 
 .recomendation__wrap{
     display: flex;
+    padding-top: 17px;
     padding-bottom: 17px;
     border-bottom: $border;
     img{
@@ -825,51 +818,80 @@ input[type="checkbox"]:checked + label::before {
     }
 }
 
-.item__wrap1{
+.post__wrap1{
     background-image: url(../img/1.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
 
-.item__wrap2{
+.post__wrap1 :first-child{
+    margin-bottom: 5px;
+}
+
+.post__wrap2{
     background-image: url(../img/2.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
 
-.item__wrap3{
+.post__wrap2 :first-child{
+    margin-bottom: 5px;
+}
+
+.post__wrap3{
     background-image: url(../img/3.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
 
-.item__wrap4{
+.post__wrap3 :first-child{
+    margin-bottom: 5px;
+}
+
+.post__wrap4{
     background-image: url(../img/4.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
 
-.item__wrap5{
+.post__wrap4 :first-child{
+    margin-bottom: 5px;
+}
+
+.post__wrap5{
     background-image: url(../img/5.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
 
-.item__wrap6{
+.post__wrap5 :first-child{
+    margin-bottom: 5px;
+}
+
+.post__wrap6{
     background-image: url(../img/6.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
 
-.item__wrap7{
+.post__wrap6 :first-child{
+    margin-bottom: 5px;
+}
+
+.post__wrap7{
     background-image: url(../img/7.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
 
+.post__wrap7 :first-child{
+    margin-bottom: 5px;
+}
+
 .recomendation__wrap-last{
     display: flex;
     padding-bottom: 17px;
+    padding-top: 17px;
     border: none;
     img{
         margin-right: 10px;
@@ -1178,12 +1200,9 @@ footer{
         grid-area: 5/2 / span 4;
     }
 
-    .news-feed__wrapper{
-        display: block;
-    }
-
     .news-feed__list{
         margin: 0 auto 30px auto;
+        width: 71%;
     }
 
     .recomendation{
@@ -1264,6 +1283,14 @@ footer{
     .banner__title{
         font-size: 35px;
         line-height: 30px;
+    }
+
+    .news-feed__list{
+        width: 60%;
+    }
+
+    .post__photo{
+        display: none;
     }
 }
 
@@ -1488,19 +1515,23 @@ footer{
         grid-area: 11/1 / span 4;
     }
 
-    .news-feed__photo{
-        display: none;
+    .news-feed__wrapper{
+        display: block;
     }
 
-    .item__theme{
+    .news-feed__list {
+        width: 95%;
+    }
+
+    .post__theme{
         margin-bottom: 10px;
     }
 
-    .item__title{
+    .post__title{
         margin-bottom: 10px;
     }
 
-    .item__text{
+    .post__text{
         margin-bottom: 10px;
     }
 
