@@ -31,6 +31,7 @@ p{
     color: $textColor;
     font-weight: $mainFontWeight;
     font-family: $mainFontFamily;
+    line-height: 20px;
 }
 
 .header{
@@ -83,8 +84,8 @@ p{
 .head__input{
     border: none;
     width: 590px;
-    color: $subtextColor;
     height: 30px;
+    color: $subtextColor;
 }
 
 .header__subscribe{
@@ -136,13 +137,13 @@ p{
     display: flex;
 }
 
-.title{
+/* .title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: $color; 
     height: 84px;   
-}
+} */
 
 .title__img{
     margin-right: 15px;
@@ -159,7 +160,7 @@ p{
 
 .header__nav{
     background-color: $titleColor;
-    padding-bottom: $paddingBottom;
+    margin-bottom: -2px;
 }
 
 .nav__list{
@@ -167,10 +168,7 @@ p{
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    height: 55px;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding: 17px 0;
 
     .nav__list-link{
         color: $color;
@@ -182,10 +180,10 @@ p{
     }
 }
 
-
 .news{
     display: flex;
     background-color: $titleColor;
+    padding-top: $paddingTop;
     padding-bottom: $paddingBottom;
 }
 
@@ -201,9 +199,7 @@ p{
 .news__topic{
     display: flex;
     align-items: center;
-    max-height: 75px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 0 25px;
     border-right: 1px solid #4B5157;
 }
 
@@ -216,7 +212,6 @@ p{
     color: $color;
     font-size: 16px;
     font-family: $tilteFontFamily;
-    font-weight: $fontWeight;
     line-height: 25px;
     margin-right: 15px;
     max-width: 154px;
@@ -230,7 +225,7 @@ p{
 
 .article-tabs__container{
     display: flex;
-    border-radius: 10px;
+    border-radius: $borderRadius;
     overflow: hidden;
 }
 
@@ -253,34 +248,24 @@ p{
 }
 
 .small-title{
-    font-family: $mainFontFamily;
     color: $color;
-    font-weight: $mainFontWeight;
-    font-size: $mainFontSize;
     opacity: 0.85;
-    line-height: 20px;
 }
 
 .small-subtitle{
-    font-family: $mainFontFamily;
     color: $color;
-    font-weight: $mainFontWeight;
     font-size: 12px;
     opacity: 0.4;
-    line-height: 15px;
 }
 
 .article-tabs__topic{
     color: rgba(69, 146, 255, 1);
-    font-family: $mainFontFamily;
     font-size: 12px;
-    font-weight: $mainFontWeight;
     margin-bottom: 20px;    
 }
 
 .article-tabs__title{
     color: $color;
-    font-weight: $fontWeight;
     font-size: 40px;
     font-family: $tilteFontFamily;
     margin-bottom: 40px;
@@ -306,8 +291,6 @@ p{
     p{
         display: inline-block;
         margin-right: 8px;
-        font-family: $mainFontFamily;
-        font-size: $mainFontSize;
         color: $color;
         font-weight: $fontWeight;
     }
@@ -317,6 +300,10 @@ p{
 .player__icon{
     max-width: 100%;
     margin-right: 10px;
+}
+
+.player__icon:hover{
+    opacity: 0.6;
 }
 
 .article-tabs__nav{
@@ -329,13 +316,16 @@ p{
     border-top: $border;
 }
 
+.article-tabs__item:hover{
+    background-color: #F5F5F5;
+}
+
 .article-tabs__item:last-child{
     padding-bottom: 24px;
 }
 
 .column__title{
     font-size: $mainFontSize;
-    font-weight: $fontWeight;
     font-family: $mainFontFamily;
     padding: 20px 25px;
     letter-spacing: 0.5px;
@@ -349,14 +339,6 @@ p{
     letter-spacing: 0.5px;
     margin-bottom: 8px;
     text-transform: uppercase;
-}
-
-.article-tabs__item>p{
-    font-family: $mainFontFamily;
-    font-size: $mainFontSize;
-    font-weight: $mainFontWeight;
-    color: $textColor;
-    line-height: 20px;
 }
 
 .li-icon{
@@ -395,7 +377,7 @@ p{
 
 .card1{
     background-color: white;
-    border-radius: 10px;
+    border-radius: $borderRadius;
     overflow: hidden;
     grid-area: 1 / 1 / span 2 / span 2;
 }
@@ -419,18 +401,9 @@ p{
 }
 .card__info__title{
     font-family: $tilteFontFamily;
-    font-weight: $fontWeight;
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 25px;
-}
-.card__info__subtitle{
-    line-height: 20px;
-}
-
-.card__img{
-    max-width: 292px;
-    max-height: 299px;
 }
 
 .card__bottom{
@@ -438,7 +411,7 @@ p{
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    border-top: 1px solid grey;
+    border-top: $border;
 }
 
 .card__bottom__text{
@@ -462,7 +435,7 @@ span{
 }
 
 .card2{
-    border-radius: 10px;
+    border-radius: $borderRadius;
     overflow: hidden;
     background-color: white;
     grid-area: 3 / 1 / span 2;
@@ -477,27 +450,22 @@ span{
     font-size: 16px;
     margin-bottom: 5px;
     line-height: 25px;
-    font-weight: $fontWeight;
     font-family: $tilteFontFamily;
 }
+
 .card__text{
     margin-bottom: 10px;
-    font-size: $mainFontSize;
-    line-height: 20px;
-    font-weight: $mainFontWeight;
-    font-family: $mainFontFamily;
 }
+
 .card__subtext{
     font-size: 12px;
     color: $subtextColor;
     line-height: 15px;
-    font-weight: $mainFontWeight;
-    font-family: $mainFontFamily;
 }
 
 
 .card3, .card4, .card6, .card7{
-    border-radius: 10px;
+    border-radius: $borderRadius;
     overflow: hidden;
     background-color: white;
     padding: 25px 25px 0 25px;
@@ -514,7 +482,7 @@ span{
 
 .card5{
     background-image: url(../img/bighand.png);
-    border-radius: 10px;
+    border-radius: $borderRadius;
     overflow: hidden;
     padding: 18px 18px 35px 25px;
     display: flex;
@@ -592,15 +560,13 @@ span{
 
 .card8{
     background-color: #6E99AE;
-    border-radius: 10px;
+    border-radius: $borderRadius;
     grid-area: 1 / 4 / span 4;
 }
 
 .columns{
     font-family: $mainFontFamily;
-    font-weight: $fontWeight;
     font-size: $mainFontSize;
-    line-height: 20px;
     letter-spacing: 0.5px;
     color: $color;
     text-transform: uppercase;
@@ -641,7 +607,6 @@ span{
     text-align: center;
     color: $color;
     font-weight: 600;
-    line-height: 20px;
     border-top: 1px solid #B4D1E0;
     padding-top: 11px;
 }
@@ -657,7 +622,6 @@ span{
 .banner__title{
     font-family: $tilteFontFamily;
     color: $color;
-    font-weight: $fontWeight;
     font-size: 40px;
     line-height: 50px;
     margin: 0 auto 25px auto;
@@ -675,6 +639,7 @@ span{
 
 .news-feed__wrapper{
     display: flex;
+    align-items: flex-start;
 }
 
 .news-feed__list{
@@ -736,7 +701,6 @@ span{
 .post__title{
     font-family: $tilteFontFamily;
     font-size: 20px;
-    font-weight: $fontWeight;
     line-height: 25px;
     letter-spacing: 0px;
     text-align: left;
@@ -745,7 +709,6 @@ span{
 }
 
 .post__text{
-    line-height: 20px;
     width: 102%;
     margin-bottom: 20px;
 }
@@ -787,11 +750,17 @@ input[type="checkbox"]:checked + label::before {
     background-image: url(../img/red-bookmark.svg);
 }
 
+
+.recomendation{
+    border-radius: $borderRadius;
+    overflow: hidden;
+}
+
+
 .recomendation__title{
     background-color: $color;
     padding: 20px 25px;
     text-transform: uppercase;
-    border-radius: 10px 10px 0 0 ;
     border-bottom: $border;
     font-size: 14px;
     font-weight: bold;
@@ -899,12 +868,10 @@ input[type="checkbox"]:checked + label::before {
 
 .recomendation__text{
     background-color: $color; 
-    border-radius: 0 0 10px 10px; 
     border-top: $border; 
     padding: 11px 0 14px 0; 
     text-align: center;
     font-weight: 600;
-    line-height: 20px;
 }
 
 .slider{
@@ -947,7 +914,6 @@ input[type="checkbox"]:checked + label::before {
     font-family: $tilteFontFamily;
     font-size: 40px;
     color: $color;
-    font-weight: $fontWeight;
     line-height: 50px;
     text-align: center;
     width: 92%;
@@ -1023,7 +989,6 @@ footer{
 .footer__subscribe--title{
     font-family: $tilteFontFamily;
     font-size: 40px;
-    font-weight: $fontWeight;
     line-height: 50px;
     text-align: center;
     margin-bottom: 25px;
@@ -1040,6 +1005,9 @@ footer{
     margin-right: 10px;
     border: $border;
     border-radius: 5px;
+    font-family: $mainFontFamily;
+    font-size: 14px;
+    font-weight: $mainFontWeight;
 }
 
 .footer__button{
@@ -1093,7 +1061,6 @@ footer{
     font-weight: 600;
     font-family: $mainFontFamily;
     font-size: $mainFontSize;
-    line-height: 20px;
 }
 
 .themes__list :last-child{    
@@ -1105,8 +1072,6 @@ footer{
     font-family: $mainFontFamily;
     font-size: $mainFontSize;
     color: $textColor;
-    font-weight: $mainFontWeight;
-    line-height: 20px;
 }
 
 .footer__navigation{
@@ -1122,16 +1087,11 @@ footer{
     align-items: center;
 }
 
-.navigation__list:first-child{
-    height: 50px;
-}
-
 .navigation__list--item{
     text-transform: uppercase;
     font-family: $mainFontFamily;
     font-size: $mainFontSize;
     color: $titleColor;
-    line-height: 20px;
     letter-spacing: 0.5px;
     font-weight: $fontWeight;
     margin-right: 30px;
@@ -1437,6 +1397,8 @@ footer{
     .article-tabs__content{
         width: 100%;
         padding: 35px 15px 27px 15px;
+        margin-bottom: 15px;
+        border-radius: $borderRadius;
     }
 
     .author{
@@ -1450,11 +1412,16 @@ footer{
 
     .article-tabs__nav{
         margin: 0 auto;
-
+        border-radius: $borderRadius;
+        overflow: hidden;
     }
 
     .article-tabs__list{
         max-width: 100vh
+    }
+
+    .card__bottom{
+        padding: 8px;
     }
 
     .grid{
@@ -1465,17 +1432,56 @@ footer{
 
     }
 
+    .card__img{
+        display: none;
+    }
+
+    .card1{
+        grid-area: 1/1/span 2
+    }
+
+    .card2{
+        grid-area: 3/1 / span 2;
+    }
+
+    .card3{
+        grid-area: 5/1;
+    }
+
+    .card4{
+        grid-area: 6/1;
+    }
+
+    .card5{
+        grid-area: 7/1 / span 2; 
+    }
+
+    .card6{
+        grid-area: 9/1;
+    }
+
+    .card7{
+        grid-area: 10/1;
+    }
+
+    .card8{
+        grid-area: 11/1 / span 4;
+    }
+
     .article-tabs__list{
         max-width: 100vh
     }
-
 
     .article-grid{
         padding-top: 700px;
     }
 
     .card__info{
-        padding: 18px 18px 45px 25px;
+        padding: 18px 11px 45px 25px;
+    }
+
+    .news-feed__wrapper{
+        display: block;
     }
 }
 
@@ -1490,36 +1496,8 @@ footer{
         font-size: 24px;
     }
 
-    .card__img{
-        display: none;
-    }
-
-    .card__bottom{
-        padding: 0 10px;
-    }
-
     .card__bottom__text{
         margin-right: 10px;
-    }
-
-    .card1{
-        grid-area: 1/1/span 2
-    }
-
-    .card2{
-        grid-area: 3/1 / span 2;
-    }
-    .card3{
-        grid-area: 5/1;
-    }
-    .card4{
-        grid-area: 6/1;
-    }
-    .card5{
-        grid-area: 7/1 / span 2; 
-    }
-    .card6{
-        grid-area: 9/1;
     }
 
 }
@@ -1530,16 +1508,6 @@ footer{
         display: flex;
         flex-direction: column;
         padding: 10px 0;
-    }
-    .card7{
-        grid-area: 10/1;
-    }
-    .card8{
-        grid-area: 11/1 / span 4;
-    }
-
-    .news-feed__wrapper{
-        display: block;
     }
 
     .news-feed__list {
@@ -1628,20 +1596,7 @@ footer{
 
     .head__input{
         width: 250px;
-    .news__topic{
-        border-right: none ;
-        padding: 5px 0;
-        border-bottom: $border;
     }
-
-    .news__topic__title{
-        font-size: 13px;
-        max-width: fit-content;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width:580px){
 
     .news__wrapper{
         display: flex;
@@ -1659,37 +1614,6 @@ footer{
         font-size: 13px;
         max-width: fit-content;
         margin: 0 auto;
-    }
-
-    .banner__title{
-        font-size: 16px;
-        line-height: 24px;
-        margin: 0 auto 10px auto;
-    }
-
-    .slider__grid {
-        display: grid;
-        justify-content: center;
-        grid-gap: 30px;
-        grid: repeat(6, 170px)/repeat(1, 262px);
-    }
-
-    .slider__grid--item1 {
-        grid-area: 1/1/ span 3 / span 1;
-        background-position: right;
-    }
-
-    .slider__grid--item2 {
-        grid-area: 4/1/span 2/span 1;
-        background-image: none;
-    }
-
-    .slider__grid--item3 {
-        grid-area: 5/1;
-    }
-
-    .slider__grid--item4 {
-        grid-area: 6/1;
     }
 }
 
@@ -1727,6 +1651,51 @@ footer{
 
     .head__subtext{
         font-size: 12px;
+    }
+
+    .news__topic{
+        border-right: none ;
+        padding: 8px 0;
+        border-bottom: $border;
+    }
+
+    .news__topic__title{
+        font-size: 13px;
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    .banner__title{
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 auto 10px auto;
+    }
+
+    .slider__grid {
+        display: grid;
+        justify-content: center;
+        grid-gap: 30px;
+        grid: repeat(7, 170px)/repeat(1, 262px);
+    }
+
+    .slider__grid--item1 {
+        grid-area: 1/1/ span 3 / span 1;
+        background-position: right;
+        width: 160%;
+        justify-self: center;
+    }
+
+    .slider__grid--item2 {
+        grid-area: 4/1/span 2/span 1;
+        background-image: none;
+    }
+
+    .slider__grid--item3 {
+        grid-area: 6/1;
+    }
+
+    .slider__grid--item4 {
+        grid-area: 7/1;
     }
 
     .input{
@@ -1793,7 +1762,7 @@ footer{
     }
 
     .article-grid{
-        padding-top: 770px;
+        padding-top: 790px;
     }
 
     .banner{
@@ -1850,6 +1819,8 @@ footer{
         max-width: inherit;
     }
 
+    .slider__grid--item1{
+        width: 100%;
+    }
 }
 
-}
