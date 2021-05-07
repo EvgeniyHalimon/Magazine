@@ -1,0 +1,149 @@
+@import "variables";
+
+
+footer{
+    padding-top: 60px !important;
+    padding-bottom: 55px !important;
+}
+
+.footer__subscribe{
+    margin-bottom: 70px;
+}
+
+.footer__title{
+    font-family: $tilteFontFamily;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.footer__form{
+    text-align: center;
+}
+
+.footer__input{
+    width: 313px;
+    padding: 10px 15px;
+    color: $subtextColor;
+    margin-right: 10px;
+    border: $border;
+    border-radius: 5px;
+    font-family: $mainFontFamily;
+    font-size: 14px;
+    font-weight: $mainFontWeight;
+}
+
+.footer__button{
+    width: 119px;
+    margin-right: 0;
+    p{
+    color: $color;
+    margin-right: 0;
+    }
+}
+
+.footer__themes{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 64px;
+    border-bottom: $border;
+}
+
+.themes__wrap{
+    padding-top: $paddingTop;
+    width: 190px;
+}
+
+.themes__item1{
+    border-top: 5px solid #FF4F52;
+}
+
+.themes__item2{
+    border-top: 5px solid #AC8EE3;
+}
+
+.themes__item3{
+    border-top: 5px solid #4592FF;
+}
+
+.themes__item4{
+    border-top: 5px solid #FFA34D;
+}
+
+.themes__item5{
+    border-top: 5px solid #3DC47E;
+}
+
+.themes__item6{
+    border-top: 5px solid #6E99AE;
+}
+
+.themes__title{
+    margin-bottom: 25px;
+    color: $titleColor;
+    font-weight: 600;
+    font-family: $mainFontFamily;
+    font-size: $mainFontSize;
+}
+
+.themes__list :last-child{    
+    margin-bottom: 0;
+}
+
+.themes__list--item{
+    margin-bottom: 15px;
+    font-family: $mainFontFamily;
+    font-size: $mainFontSize;
+    color: $textColor;
+}
+
+.footer__navigation{
+    display: flex;
+    justify-content: space-between;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBottom;
+    border-bottom: $border;
+
+    div{
+        display: flex;
+        height: fit-content;
+    }
+}
+
+.company-logo{
+    margin-right: 30px;
+}
+
+.navigation__list{
+    display: flex;
+    align-items: center;
+}
+
+.navigation__list--item{
+    text-transform: uppercase;
+    font-family: $mainFontFamily;
+    font-size: $mainFontSize;
+    color: $titleColor;
+    letter-spacing: 0.5px;
+    font-weight: $fontWeight;
+    margin-right: 30px;
+}
+
+.social{
+    margin-right: 15px;
+}
+
+.navigation__list--item:last-child{
+    margin-right: 0;
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.footer__bottom :first-child{
+    width: 69%;
+}
