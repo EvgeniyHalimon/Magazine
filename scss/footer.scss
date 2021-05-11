@@ -1,9 +1,9 @@
 @import "variables";
 
 
-footer{
-    padding-top: 60px !important;
-    padding-bottom: 55px !important;
+.footer{
+    margin-top: 60px;
+    margin-bottom: 55px;
 }
 
 .footer__subscribe{
@@ -107,7 +107,7 @@ footer{
 
     div{
         display: flex;
-        height: fit-content;
+        align-items: center;
     }
 }
 
@@ -117,7 +117,6 @@ footer{
 
 .navigation__list{
     display: flex;
-    align-items: center;
 }
 
 .navigation__list--item{

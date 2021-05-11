@@ -9,6 +9,9 @@
     list-style-type: none;
     text-decoration: none;
 }
+a, button{
+    cursor: pointer;
+}
 
 p{
     font-size: $mainFontSize;
@@ -1027,7 +1030,7 @@ input[type="checkbox"]:checked + label::before {
     }
     
     .social-grid{
-        display: grid !important;
+        display: grid;
         align-content: center;
         justify-content: center;
         grid: repeat(2, 40px)/repeat(2, 40px);
@@ -1035,7 +1038,7 @@ input[type="checkbox"]:checked + label::before {
     }
 
     .social{
-        margin: 0 !important;
+        margin: 0;
     }
 }
 
@@ -1483,7 +1486,7 @@ input[type="checkbox"]:checked + label::before {
         font-size: 12px;
     }
 
-    .smalll-subtitle{
+    .small-subtitle{
         font-size: 10px;
     }
 
@@ -1503,6 +1506,25 @@ input[type="checkbox"]:checked + label::before {
 
     .slider__grid--item1{
         width: 100%;
+    }
+
+    .footer__title {
+        font-size: 24px;
+    }
+
+    .footer__navigation{
+        display: block;
+        div{
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    .social-grid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
