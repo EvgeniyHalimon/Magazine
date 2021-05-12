@@ -28,6 +28,7 @@
 
 .head__icon {
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .head__text {
@@ -78,6 +79,7 @@
 
 .head__bio {
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .input {
@@ -97,6 +99,10 @@
 
 .header__date {
   display: flex;
+}
+
+.title__logo {
+  cursor: pointer;
 }
 
 .title__img {
@@ -133,7 +139,6 @@
 }
 
 .footer {
-  margin-top: 60px;
   margin-bottom: 55px;
 }
 
@@ -243,6 +248,7 @@
 
 .company-logo {
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .navigation__list {
@@ -285,7 +291,7 @@
   text-decoration: none;
 }
 
-a, button {
+a, button, li {
   cursor: pointer;
 }
 
@@ -331,6 +337,7 @@ p {
   line-height: 25px;
   margin-right: 15px;
   max-width: 154px;
+  cursor: pointer;
 }
 
 .article-tabs {
@@ -415,6 +422,7 @@ p {
 .player__icon {
   max-width: 100%;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .player__icon:hover {
@@ -546,6 +554,7 @@ span {
 
 .card__bottom__icon {
   margin-right: 6px;
+  cursor: pointer;
 }
 
 .card2 {
@@ -651,6 +660,7 @@ span {
 .bottom__line img {
   margin-right: 6px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .bottom__line > p:last-child {
@@ -848,11 +858,13 @@ label::before {
   width: 14px;
   height: 18px;
   background-image: url(../img/Bookmark.svg);
+  cursor: pointer;
 }
 
 input[type=checkbox]:checked + label::before {
   content: "";
   background-image: url(../img/red-bookmark.svg);
+  cursor: pointer;
 }
 
 .recomendation {
@@ -986,6 +998,7 @@ input[type=checkbox]:checked + label::before {
   display: grid;
   grid-gap: 30px;
   grid: repeat(3, 170px)/repeat(4, 262px);
+  margin-bottom: 60px;
 }
 
 .slider__grid--item1 {
@@ -1039,6 +1052,9 @@ input[type=checkbox]:checked + label::before {
 
 .slider__point {
   text-align: center;
+}
+.slider__point img {
+  cursor: pointer;
 }
 
 .slider__grid--item2 {
