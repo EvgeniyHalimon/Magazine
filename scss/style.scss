@@ -9,6 +9,9 @@
     list-style-type: none;
     text-decoration: none;
 }
+a, button, li{
+    cursor: pointer;
+}
 
 p{
     font-size: $mainFontSize;
@@ -52,6 +55,7 @@ p{
     line-height: 25px;
     margin-right: 15px;
     max-width: 154px;
+    cursor: pointer;
 } 
 
 .article-tabs{
@@ -137,6 +141,7 @@ p{
 .player__icon{
     max-width: 100%;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .player__icon:hover{
@@ -268,6 +273,7 @@ span{
 
 .card__bottom__icon{
     margin-right: 6px;
+    cursor: pointer;
 }
 
 .card2{
@@ -376,6 +382,7 @@ span{
     img{
         margin-right: 6px;
         vertical-align: middle;
+        cursor: pointer;
     }
 }
 
@@ -576,11 +583,13 @@ label::before {
     width: 14px;
     height: 18px;
     background-image: url(../img/Bookmark.svg);
+    cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label::before {
     content: '';
     background-image: url(../img/red-bookmark.svg);
+    cursor: pointer;
 }
 
 .recomendation{
@@ -714,6 +723,7 @@ input[type="checkbox"]:checked + label::before {
     display: grid;
     grid-gap: 30px;
     grid: repeat(3, 170px)/repeat(4, 262px);
+    margin-bottom: 60px;
 }
 
 .slider__grid--item1{
@@ -769,6 +779,9 @@ input[type="checkbox"]:checked + label::before {
 
 .slider__point{
     text-align: center;
+    img{
+        cursor: pointer;
+    }
 }
 
 .slider__grid--item2{
@@ -1027,7 +1040,7 @@ input[type="checkbox"]:checked + label::before {
     }
     
     .social-grid{
-        display: grid !important;
+        display: grid;
         align-content: center;
         justify-content: center;
         grid: repeat(2, 40px)/repeat(2, 40px);
@@ -1035,7 +1048,7 @@ input[type="checkbox"]:checked + label::before {
     }
 
     .social{
-        margin: 0 !important;
+        margin: 0;
     }
 }
 
@@ -1483,7 +1496,7 @@ input[type="checkbox"]:checked + label::before {
         font-size: 12px;
     }
 
-    .smalll-subtitle{
+    .small-subtitle{
         font-size: 10px;
     }
 
@@ -1503,6 +1516,25 @@ input[type="checkbox"]:checked + label::before {
 
     .slider__grid--item1{
         width: 100%;
+    }
+
+    .footer__title {
+        font-size: 24px;
+    }
+
+    .footer__navigation{
+        display: block;
+        div{
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    .social-grid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

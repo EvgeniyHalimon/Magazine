@@ -1,9 +1,8 @@
 @import "variables";
 
 
-footer{
-    padding-top: 60px !important;
-    padding-bottom: 55px !important;
+.footer{
+    margin-bottom: 55px;
 }
 
 .footer__subscribe{
@@ -107,17 +106,17 @@ footer{
 
     div{
         display: flex;
-        height: fit-content;
+        align-items: center;
     }
 }
 
 .company-logo{
     margin-right: 30px;
+    cursor: pointer;
 }
 
 .navigation__list{
     display: flex;
-    align-items: center;
 }
 
 .navigation__list--item{
